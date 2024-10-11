@@ -1,0 +1,53 @@
+GET http://localhost:3000/order/runningTest HTTP/1.1
+
+####
+GET http://localhost:3000/order/errorTest HTTP/1.1
+
+
+
+####
+GET http://localhost:3000/order/create HTTP/1.1
+
+####
+POST http://localhost:3000/order/create HTTP/1.1
+Content-Type: :application/json
+
+{
+    "orderName": "test",
+    "amount": 100,
+    "orderDescription": "orderDescription >> "
+}
+
+
+####
+GET http://localhost:3000/order/list HTTP/1.1
+
+###
+POST http://localhost:3000/order/create HTTP/1.1
+Content-Type: : application/json
+
+{
+    "orderName": "test"
+}
+
+########
+PUT http://localhost:3000/order/update/4  HTTP/1.1
+Content-Type: : application/json
+
+{
+    "orderName": "test update",
+    "amount": 100,
+    "orderDescription": "orderDescription "
+}
+
+###
+DELETE http://localhost:3000/order/delete/4 HTTP/1.1
+
+
+#######
+PUT http://localhost:3000/order/update/4 HTTP/1.1
+Content-Type: : application/json
+
+{
+    "orderName": "test update"
+}
